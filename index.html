@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#goals">Goals</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="about" class="about-section">
+          <h1>Hello, I'm a Frontend Developer</h1>
+          <p>
+            As a dynamic and determined Junior Frontend developer, my
+            background in software development from Codetrain has equipped me
+            with the skills and knowledge to excel. My passion for learning and
+            exploring new areas drives me to evolve and grow in my career
+            continuously.
+          </p>
+        </div>
+        <div class="social-links" data-testid="social-links">
+          <!-- <h2>Let Connect</h2> -->
+          <img
+            src="images/kezia.jpeg"
+            alt="Slack Profile Picture"
+            data-testid="slackProfilePicture"
+            class="slackDisplayName"
+          />
+          <p>
+            Slack name:
+            <a href="https://app.slack.com/client/T07466B189M/C07A07C74DQ"> </a>
+            <span data-testid="slackDisplayName">Kezia Ahenkorah</span>
+          </p>
+          <p>
+            Slack email:
+            <a href=""> </a>
+            <span data-testid="slackEmail">ahenkorahkezia100@gmail.com</span>
+          </p>
+        </div>
+        <div class="date" data-testid="date">
+          <p>
+            Current Time in UTC:
+            <span data-testid="currentTimeUTC" id="currentTimeUTC"></span>
+          </p>
+          <p>
+            Current Day of the Week:
+            <span data-testid="currentDay" id="currentDay"></span>
+          </p>
+        </div>
+      </section>
+
+      <section id="goals" class="goals-section">
+        <h2>My Tech Goals</h2>
+        <div class="goal-cards">
+          <div class="goal-card">
+            <h3>Advanced ReactJS</h3>
+            <p>Become proficient in advanced ReactJS.</p>
+          </div>
+          <div class="goal-card">
+            <h3>Open-Source Projects</h3>
+            <p>Contribute to open-source projects.</p>
+          </div>
+          <div class="goal-card">
+            <h3>TypeScript</h3>
+            <p>Learn and implement TypeScript.</p>
+          </div>
+          <div class="goal-card">
+            <h3>Portfolio Website</h3>
+            <p>Build a personal portfolio website.</p>
+          </div>
+          <div class="goal-card">
+            <h3>Tech Conferences</h3>
+            <p>Attend at least three tech conferences.</p>
+          </div>
+          <div class="goal-card">
+            <h3>Mentorship</h3>
+            <p>Mentor junior developers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Connect with Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Stay Connected</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="">
+        <div class="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
+                <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+            </ul>
+        </div>
+      <p>&copy; 2024 Kezia Baidoo. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
